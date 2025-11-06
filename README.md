@@ -60,7 +60,6 @@ cd lab05-submission
 Create a Python virtual environment and activate it:
 
 Linux / macOS
-
 bash
 Copy code
 python3 -m venv .venv
@@ -95,20 +94,12 @@ flake8 cleaned_inventory_system.py > flake8_report.txt 2>&1
 bandit -r cleaned_inventory_system.py -f txt -o bandit_report.txt
 Reflection Summary
 See reflection.md for full write-up.
-Key observations:
 
+##Key observations:
 Easiest fixes: Formatting, docstrings, and unused imports.
-
 Harder fixes: Security warnings and refactoring logic flagged by Bandit.
+Future integration: Add a GitHub Actions workflow to automatically run static analysis on each push to prevent regressions
+##.
 
-Future integration: Add a GitHub Actions workflow to automatically run static analysis on each push to prevent regressions.
 
-CI / Automation (recommended)
-To automate checks:
-
-Create a .github/workflows/static-analysis.yml workflow.
-
-Configure it to run pylint, flake8, and bandit on each push.
-
-Upload reports as artifacts for review in the Actions tab.
 
