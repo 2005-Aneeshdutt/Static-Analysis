@@ -4,8 +4,6 @@
 
 Static code analysis of the inventory system for SE Lab 5 using `pylint`, `flake8`, and `bandit`.
 
-**Repository:** [https://github.com/2005-Aneeshdutt/lab05-submission](https://github.com/2005-Aneeshdutt/lab05-submission)
-
 ---
 
 ## About
@@ -100,6 +98,7 @@ Easiest fixes: Formatting, docstrings, and unused imports.
 Harder fixes: Security warnings and refactoring logic flagged by Bandit.
 Future integration: Add a GitHub Actions workflow to automatically run static analysis on each push to prevent regressions
 ##.
+
 
 
 
